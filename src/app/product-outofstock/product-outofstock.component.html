@@ -1,0 +1,19 @@
+<div class="store">
+    <div class="store-name" *ngFor="let image of images"> 
+        <div class="store-info">
+            <div class="store-img">
+                <img src="{{image.image}}" class="image-scale">
+             </div>
+             <div class="store-add">
+                 <h4>{{image.name}}</h4>
+                 <label>{{image.text}}</label>
+             </div>
+         </div>
+         
+         <div class="store-nav">
+             <span>11AM to 8PM</span>
+             <span><i class="fas fa-location-arrow"></i></span> <span>11.4KM</span>
+             <span><i class="fas fa-directions"></i></span>
+         </div>
+     </div>
+ </div>

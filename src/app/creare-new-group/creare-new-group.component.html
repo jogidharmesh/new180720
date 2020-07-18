@@ -1,0 +1,29 @@
+<div class="grp-lrg-btn">
+    <button (click)="nextClick()" >Create group</button>
+    <button (click)="nextClick()" >List Group</button>
+</div>
+<section class="create-group" *ngIf="show">
+    <input class="inout" placeholder="Enter Group Namae">
+    <button class="group-two-button">Create</button>
+</section>
+<section class="group-list" *ngIf="show">
+    <div class="group-one">
+        <h2> Select contact to add to group</h2>
+        <div *ngFor="let items of images" class="contactlist">
+           <img class="img" src="{{items.image}}"><h4>{{items.text}}</h4> 
+        </div>
+    </div>
+    <!-- <div class="group-two">
+     <button class="group-two-button" (click)="nextClick()">Next</button>
+    </div> -->
+  </section>
+
+
+
+  <section class="user-group" *ngIf="!show">
+    <h2> Group List</h2>
+    <div *ngFor="let items of images" class="group-name">
+       <input ><i class="fas fa-user-edit"></i> <button >Choose</button> 
+     </div>
+  </section>
+<app-app-footer></app-app-footer>

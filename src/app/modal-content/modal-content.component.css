@@ -1,0 +1,10 @@
+.mat-dialog-actions button{
+    padding:5px 15px 5px 15px ;
+    background-color: var(--BTN-BG-COLOR);
+    color: var(--BTN-FONT-COLOR);
+    width: 50%;
+}
+
+.mat-dialog-content input{
+width: 95%;
+}

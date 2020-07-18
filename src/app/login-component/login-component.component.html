@@ -1,0 +1,28 @@
+<div class="login-container">
+    <div class="login" *ngIf="!show">
+        <input type="text" placeholder="Enter Mobile Number">
+        <span class="sep">OR</span>
+        <input type="email" placeholder="Enter Email Id">
+        <button class="login-button" (click)="show=true">Send Otp</button>
+    </div>
+    
+    <div class="login"  *ngIf="">
+        <input type="text" placeholder="Enter Mobile or Email">
+        <input type="password" placeholder="Enter Password">
+        <button class="login-button">Sign In</button>
+    </div>
+    
+
+    <div class="login-vertical mr-t" *ngIf="show">
+        <h2 class="mr-t mr-b">Please Enter received OTP</h2>
+        <div class="login-otp">
+            <input type="text"/>
+            <span class="splitter">&ndash;</span>
+            <input type="text"/>
+            <span class="splitter">&ndash;</span>
+            <input type="text"/>
+            <span class="splitter">&ndash;</span>
+            <input type="text"/>
+        </div>
+    </div>
+</div>

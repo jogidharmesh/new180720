@@ -1,0 +1,9 @@
+.cartvalue{
+    position: absolute;
+    right: 20px;
+    top: 16px; 
+}
+
+.brand-name{
+    color: var(--SEARCH-FONT-COLOR);
+}

@@ -1,0 +1,20 @@
+
+<div class="payment-method">
+    <section class="example-section">
+        <!-- <label class="example-margin">Align:</label> -->
+        <mat-radio-group >
+            <mat-radio-button class="example-margin" (change)="change('1')" value="after">Online Via UPI</mat-radio-button>
+            <mat-radio-button class="example-margin" (change)="change('2')" value="before">Cash On Delivery</mat-radio-button>
+            <mat-radio-button class="example-margin" (change)="change('3')" value="on">Pay Via m-Paisa</mat-radio-button>
+        </mat-radio-group>
+    </section>
+    <section  class="payment-method-upi">
+        <img class="img-payment" src="../../assets/upi.png"><input placeholder="Enter UPI">
+    </section>
+    <button  class="button" >Pay</button>
+    <section class="payment-method-upi" > 
+        <img class="img-payment" src="../../assets/mpaisa.png"><input placeholder="Enter Mpaisa">
+    </section>
+    <button class="button" >Pay</button>
+</div>
+<app-app-footer></app-app-footer>

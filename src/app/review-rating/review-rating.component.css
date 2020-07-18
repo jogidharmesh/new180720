@@ -1,0 +1,28 @@
+.review-rat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+}
+
+.mat-dialog-actions button {
+    padding: 5px 30px 5px 30px;
+    background-color: var(--BTN-BG-COLOR);
+    color: var(--BTN-FONT-COLOR);
+    width: 50%;
+}
+textarea {
+    height: 8em;
+    width: 25em;
+}
+
+
+@media screen and (max-width:450px){
+
+    textarea {
+        height: 5em;
+        width: 15em;
+    }
+    
+}

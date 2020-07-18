@@ -1,0 +1,19 @@
+<div class="wish-list-container">
+    <div class="wish-list-store" *ngFor="let item of str">
+        <h2>Haryana Store</h2>
+        <div class="wish-list-product" *ngFor="let item of images">
+            <div class="wish-list-img">
+                <img src="{{item.image}}" class="image-scale">
+            </div>
+            <div class="wish-list-details">
+                <h4>{{item.text}}</h4>
+                <div class="wish-list-des">
+                    <label>250gm</label><label>Green</label>
+                </div>
+            </div>
+            <div class="wish-list-delet">
+                <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+    </div>
+</div>

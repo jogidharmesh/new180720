@@ -1,0 +1,76 @@
+
+
+<div *ngIf="!ad" class="delivery-ad">
+    <div class="change-address">
+        <h3>Delivery To</h3>
+        <button class="button"><a href="/change-delivery">Change</a></button>
+    </div>
+    <label>SCO 201, Sector 14, BEL Colony, Budanpur, Panchkula, Haryana 134109</label>
+</div>
+<div class="delivery-type mr-l mr-t mr-r mr-b">
+    <div class="delivery-home">
+        <h4>Home Delivery</h4>
+        <img src="../../assets/delivery.png" (click)="hd =true;ps=fasle">
+    </div>
+
+    <div class="delivery-pickup">
+        <h4>Pick Up from store</h4>
+        <img src="../../assets/store.png" (click)="hd =false;ps=true">
+    </div>
+</div>
+<div *ngIf="hd" class="home-delivery mr-l mr-t mr-r mr-b">
+    <h4>Your order will be deliverd within next 24 hours at 400/20 ,sector 11,Goregaon,Haryana,India </h4>
+</div>
+<div *ngIf="ps" class="picup-order mr-l mr-t mr-r mr-b">
+    <h3>PickUp from store time</h3><a href="/store-pickup">Timing</a>
+</div>
+<div *ngIf="pickupfromstore" class="delivery-pickup-time mr-t mr-r mr-l mr-b">
+    <h3>Select your prefer time slot</h3>
+    <input [owlDateTime]="dt2" placeholder="Date Time">
+    <span [owlDateTimeTrigger]="dt2"><i class="fa fa-calendar"></i></span>
+    <owl-date-time #dt2></owl-date-time>
+</div>
+<div class="store-details mr-l mr-t mr-r mr-b">
+    <div class="store-head">
+        <h3>Store Details</h3><button (click)="showhide()">{{dstatus}}</button>
+    </div>
+    <div class="store-map" *ngIf="show">
+        <label>Postmaster, Post Office ARJUN NAGAR (SUB OFFICE), GURGAON, HARYANA (HR), India (IN)</label>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.9505603828596!2d72.67658698804522!3d23.03103223326439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87c478a93855%3A0x688afae7e62423be!2sGirivar%20Globe%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1588589978651!5m2!1sen!2sin"
+            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+</div>
+<div class="review-order mr-l mr-t mr-r mr-b">
+    <h3>Review Order</h3><a href="/product-cart">Review Order</a>
+</div>
+
+<div class="member-ship  mr-l mr-t mr-r mr-b ">
+    <h3>Please enter your membership no</h3>
+
+    <div class="member-ship-btm">
+        <input type="text">
+        <button type="button">Check</button>
+    </div>
+</div>
+<div class="redeem mr-l mr-t mr-r mr-b">
+    <label>Choose Redeem option</label>
+    <button type="button"><a href="/redeem-options">Apply Now</a></button>
+</div>
+<div class="cart-checkout-delivery mr-l mr-t mr-r mr-b">
+    <h3>Payment Details</h3>
+    <div class="product-dt">
+        <h4>M.R.P Total</h4> <label>250 RS</label>
+    </div>
+    <div class="product-dt">
+        <h4>Disocount</h4> <label>50</label>
+    </div>
+    <div class="product-dt">
+        <h4>Total Amount</h4> <label>200</label>
+    </div>
+    <div class="product-dt">
+        <h4></h4> <button><a routerLink="/payment-method">Proceed</a></button>
+    </div>
+</div>
+<app-app-footer></app-app-footer>

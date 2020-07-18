@@ -1,0 +1,62 @@
+.redeems-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-redeem{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.redeem-box{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    width: 40%;
+    border-radius: 10px;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+
+.redeem-button{
+    padding: 5px 15px 5px 15px;
+    background-color: var(--BTN-BG-COLOR );
+    color:(--BTN-FONT-COLOR );
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.img-gift{
+    width: 150px;
+    height: 60px;
+}
+
+.redeem-sucees{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:var(--REEDEME-BG-COLOR);
+    height: 2em;
+    align-items: center;
+    color: var(--REEDEME-FONT-COLOR);
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    position: fixed;
+    right: 10px;
+}
+
+
+@media screen and (max-width:450px){
+
+    .redeem-box{
+        width: 90%;
+    }
+    .redeem-sucees{
+        width: 75%;
+    }
+}

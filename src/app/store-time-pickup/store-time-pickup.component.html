@@ -1,0 +1,19 @@
+<div class="calendar">
+
+<div class="week">
+    <div class="day" *ngFor="let item of items">
+    <h4>Sat</h4>
+    <label>07 June</label>
+    </div>
+</div>
+<div class="timing" >
+    <mat-radio-group *ngFor="let time of timing"  aria-label="Select an option">
+        <mat-radio-button value="1">{{time.time}}</mat-radio-button>
+      </mat-radio-group>
+</div>
+<!-- <button  class="button"><a  href="/delivery-address">back</a></button> -->
+</div>
+
+<div class="time-btn">
+    <button  class="btn" routerLink="/delivery-address">Set Time</button>
+</div>

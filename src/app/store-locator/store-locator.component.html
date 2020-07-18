@@ -1,0 +1,45 @@
+<div class="gl-btn">
+  <h2>ALL Category</h2>
+</div>
+<div class="str-gl">
+  <div class="str-gl-cat" *ngFor="let item of storesCat">
+    <div class="st-gl-img">
+      <img class="st-img" src="{{item.image}}">
+    </div>
+    <div class="">
+      <h4>{{item.text}}</h4>
+    </div>
+  </div>
+  <div class="str-gl-cat">
+    <div class="st-gl-img">
+      <img class="st-img" src="../../assets/More.png">
+    </div>
+    <div class="">
+      <h4>More</h4>
+    </div>
+  </div>
+</div>
+
+<div class="mr-t mr-l mr-r display-flex">
+  <div class="goole-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.9505603828596!2d72.67658698804522!3d23.03103223326439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87c478a93855%3A0x688afae7e62423be!2sGirivar%20Globe%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1588589978651!5m2!1sen!2sin"
+      width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </div>
+</div>
+<div class="gl-btn">
+  <h2>Store Locator</h2>
+  <a href="/store-list">View Store List</a>
+</div>
+<div class="mr-l mr-r mr-t mr-b">
+  <owl-carousel [options]="carouselOptionsStore" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+    <div *ngFor="let image of stores;let i=index" class="store-card-address">
+      <div class="store-box">
+        <a href="product-view"><img class="store-card-image" src="{{image.image}}"></a>
+      </div>
+      <p class="store-text">{{image.text}}</p>
+    </div>
+  </owl-carousel>
+</div>
+<app-app-store-footer></app-app-store-footer>

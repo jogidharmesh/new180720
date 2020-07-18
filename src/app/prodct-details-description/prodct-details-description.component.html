@@ -1,0 +1,168 @@
+
+<div class="alert-box">
+    <span routerLink="/out-stock">Pelase check this items in another store</span>
+</div>
+
+
+<app-category-nav-bar></app-category-nav-bar>
+<div class="mr-t mr-l mr-r product-details-des product-dt-mobile">
+    <h3>Rose Body Cleaner 250gm offerpack</h3>
+    <img src="../../assets/f.jpeg" alt="" class="img-prd-details">
+    <div style="display: flex;flex-direction: row;">
+        <div [ngClass]=" isBlurred == true ? 'img-blur':'img-size'" *ngFor="let img of giamges">
+            <img src="{{img.src}}" style="width: 100%;height: 100%">
+        </div>
+    </div>
+    <div class="new-card-hr-btm">
+        <i class="fas fa-heart"></i>
+        <button type="button" class="button">Add To Cart</button>
+    </div>
+</div>
+
+
+<div class="mr-t mr-l mr-r product-details-btm product-dt-mobile">
+
+    <div class="product-dt">
+        <h4>M.R.P</h4> <label>250 RS</label>
+        <h4></h4> <label></label>
+    </div>
+    <div class="product-dt">
+        <h4>Size</h4> <label>375Gm</label>
+        <h4>Color</h4> <label>Pink</label>
+    </div>
+    <div class="product-dt">
+        <h4>Quntity</h4> <label>10</label>
+        <h4>Brand</h4> <label>Patnjali</label>
+    </div>
+    <mat-card>
+        <div class="offers" *ngFor="let item of items">
+            <label>{{item.text}}</label><button type="button">Select</button>
+        </div>
+        <div>
+            <h3>You are chossing Buy 1 QTY MRP 350</h3>
+            <div class="product-qty">
+                <input type="text"> <button class="qty-btn">Ok</button>
+            </div>
+        </div>
+    </mat-card>
+    <!-- <div class="sharing">
+        <i class="fas fa-share">Share</i>
+        <i class="fas fa-heart">Wishlist</i>
+    </div> -->
+    <div class="addto-cart">
+        <button type="button">Shop Now</button>
+        <button type="button">Share</button>
+    </div>
+
+</div>
+
+
+<div class="web-product mr-t">
+    <div class="img-gl-prd">
+        <div class="img-size" *ngFor="let img of giamges">
+            <img src="{{img.src}}" >
+        </div>
+    </div>
+    <div class="img-large">
+        <img src="../../assets/f.jpeg" [ngClass]=" isBlurred == true ? 'img-blur':'img-size'">
+        <span class="centered">Out of Stocks</span>
+        <div class="new-card-hr-btm">
+            <i class="fas fa-heart"></i>
+            <button type="button" class="button">Add To Cart</button>
+        </div>
+    </div>
+    <div class="web-product-right">
+        <h3>Rose Body Cleaner 250gm offerpack</h3>
+        <div class="product-dt">
+            <h4>M.R.P</h4> <label>250 RS</label>
+            <h4></h4> <label></label>
+        </div>
+        <div class="product-dt">
+            <h4>Size</h4> <label>375Gm</label>
+            <h4>Color</h4> <label>Pink</label>
+        </div>
+        <div class="product-dt">
+            <h4>Quntity</h4> <label>10</label>
+            <h4>Brand</h4> <label>Patnjali</label>
+        </div>
+        <mat-card>
+
+            <div class="offers" *ngFor="let item of items">
+                <label>{{item.text}}</label><button type="button">Select</button>
+            </div>
+            <h3>You are chossing Buy 1 QTY MRP 350</h3>
+            <div class="product-qty">
+                <input type="text"> <button class="qty-btn">Ok</button>
+            </div>
+        </mat-card>
+        <!-- <div class="sharing">
+            <i class="fas fa-share">Share</i>
+            <i class="fas fa-heart">Wishlist</i>
+        </div> -->
+        <div class="addto-cart">
+            <button type="button">Sare</button>
+            <button type="button" routerLink="/product-cart"><a  routerLink="/product-cart">Add to Cart</a></button>
+        </div>
+    </div>
+</div>
+
+<div>
+    <mat-card>
+        <h2>Product Details</h2>
+        <label>Lotte Choco Pie is a popular cream filled biscuit dipped in yummy Chocolate that is relished by kids and
+            adults alike. A filling chocolate snack from Lotte,it can be an expression and a simply tasty treat to say
+            you are thinking of someone special. Lotte Choco Pie Cream-filled biscuits with crispy exteriors and gooey
+            chocolate inside, will give you the experience of true cocoa and is a combination of soft cake like texture
+            and fluffiness. These biscuits can be an ideal snacking option for kids in the school box. Buy this yummy,
+            delicious product online today!</label>
+    </mat-card>
+</div>
+<div>
+    <mat-card>
+        <h2>Product Information</h2>
+        <label> Brand Lotte </label>
+        <label> Manufacturer Lotte India Corporation Limited </label>
+    </mat-card>
+</div>
+<mat-card>
+        <h2>Product Rating and Review</h2>
+        <ngb-rating [(rate)]="currentRate" [readonly]=true></ngb-rating>
+        <pre>Rate: <b>{{currentRate}}</b></pre>
+
+        <div class="product-review">
+            <div class="product-review-user">
+                <div class="product-review-user-info">
+                   <h3>Mandeep Singh</h3>
+                   <p>12/10/2010 12:00 AM</p>
+                </div>
+                <div class="product-review-user-comment">
+                    <ngb-rating [(rate)]="currentRate" [readonly]=true></ngb-rating>
+                    <p> This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                        This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                        This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                        This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                        This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="product-review-user">
+                <div class="product-review-user-info">
+                   <h3>Mandeep Singh</h3>
+                   <p>12/10/2010 12:00 AM</p>
+                </div>
+                <div class="product-review-user-comment">
+                    <ngb-rating [(rate)]="currentRate" [readonly]=true></ngb-rating>
+                    <p> This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                        This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                        This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                        This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much
+                        This is prduct very good and i like it very much This is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very muchThis is prduct very good and i like it very much</p>
+                </div>
+                
+            </div>
+           
+        </div>
+    </mat-card>
+<app-app-footer></app-app-footer>

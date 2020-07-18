@@ -1,0 +1,32 @@
+<div class="cancel-order-main">
+    <div class="order-hr">
+        <Label>Order No :20103045</Label><button class="button"><a href="/order-details">View More</a></button>
+    </div>
+    <div class="order-hr">
+        <Label>10 items</Label><button class="button cancel">Cancell Order</button>
+    </div>
+    <div class="order-box" *ngFor="let item of items">
+        <div class="order-img">
+            <img src="{{item.image}}" class="order-image">
+        </div>
+        <div class="order-details">
+            <div class="order-row">
+                <h4>Santoor Sandal Shop</h4>
+            </div>
+            <div class="order-row">
+                <label>Price :RS100</label><label>Size :500gm</label>
+            </div>
+            <div class="order-row">
+                <label>Quntity :5 </label><label>Color: Green</label>
+            </div>
+            <div class="order-row">
+                <label class="red">Cancel Quntiy : 5</label><label class="green">Status : Open</label>
+            </div>
+        </div>
+        <div class="order-btn">
+            <button mat-button (click)="openReview()">Review</button>
+            <button mat-button (click)="openDialog()">Cancel</button>
+        </div>
+    </div>
+</div>
+<app-app-footer></app-app-footer>
