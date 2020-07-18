@@ -1,35 +1,36 @@
 
-
+<div class="body-app">
+</div>
 <div *ngIf="!noadd" formGroupName="address" class="delivery mr-l mr-t mr-r mr-b">
-    <h3>Enter Your Delivery Adrees</h3>
+    <h3>Enter Your Delivery Adreess</h3>
     <label>
         Mobile No:
     </label>
-    <input type="text" formControlName="mobile">
+    <input class="input-field-del" type="text" formControlName="mobile">
     <label>
         Full Name:
     </label>
-    <input type="text" formControlName="fullname">
+    <input class="input-field-del" type="text" formControlName="fullname">
     <label>
         Street:
     </label>
-    <input type="text" formControlName="street">
+    <input class="input-field-del" type="text" formControlName="street">
     <label>
         City:
     </label>
-    <input type="text" formControlName="city">
+    <input class="input-field-del" type="text" formControlName="city">
     <label>
         State:
     </label>
-    <input type="text" formControlName="state">
+    <input class="input-field-del" type="text" formControlName="state">
     <label>
         Zip Code:
     </label>
-    <input type="text" formControlName="zip">
+    <input class="input-field-del" type="text" formControlName="zip">
     <label>
         Full Adrees:
     </label>
-    <input type="text" class="fulltext" formControlName="address">
+    <input  type="text" class="fulltext" formControlName="address">
     <button class="button" type="button" (click)='noadd=false'>Save and proceed</button>
 </div>
 

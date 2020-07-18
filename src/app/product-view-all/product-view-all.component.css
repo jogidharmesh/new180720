@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: space-around;
     display: flex;
+    
 }
 
 .new-card-hr-hd {
@@ -189,9 +190,11 @@ z-index: 2;
     }
 
     .new-card-hr-btm {
-        align-items: center;
-        justify-content: space-around;
-        display: flex;
+     align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    
     }
 
     .new-card-hr-hd {

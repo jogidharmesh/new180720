@@ -1,9 +1,18 @@
 .cartvalue{
-    position: absolute;
-    right: 20px;
-    top: 16px; 
+      position: relative;
+    top: -15px;
+    right: 18px;
 }
 
 .brand-name{
     color: var(--SEARCH-FONT-COLOR);
+}
+
+@media screen and(max-width:450px){
+
+  .cartvalue {
+      position: relative;
+    top: -15px;
+    right: 18px;
+}
 }
