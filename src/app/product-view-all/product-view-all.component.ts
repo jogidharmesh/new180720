@@ -57,52 +57,52 @@ export class ProductViewAllComponent implements OnInit {
   images = [
     {
       text: "Good life Almonds ",
-      image: "../assets/a.jpeg",
+      image: "/assets/a.jpeg?raw=true",
       name: "Kalyan Fashion"
     },
     {
       text: "Good life Almonds  ",
-      image: "../../assets/b.jpg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/b.jpg",
       name: "Kalyan Fashion"
     },
     {
       text: "Good life Almonds ",
-      image: "../../assets/c.jpeg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/c.jpeg?raw=true",
       name: "Kalyan Fashion"
     },
     {
       text: "Good life Almonds ",
-      image: "../../assets/d.jpeg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/d.jpeg?raw=true",
       name: "Kalyan Fashion",
     },
     {
       text: "Good life Almonds ",
-      image: "../../assets/e.jpeg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/e.jpeg?raw=true",
       name: "Kalyan Fashion"
     },
     {
       text: "Good life Almonds ",
-      image: "../../assets/a.jpeg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/a.jpeg?raw=true",
       name: "Kalyan Fashion"
     },
     {
       text: "Good life Almonds  ",
-      image: "../../assets/b.jpg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/b.jpg",
       name: "Kalyan Fashion"
     },
     {
       text: "Good life Almonds ",
-      image: "../../assets/c.jpeg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/c.jpeg?raw=true",
       name: "Kalyan Fashion"
     },
     {
       text: "Good life Almonds ",
-      image: "../../assets/d.jpeg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/d.jpeg?raw=true",
       name: "Kalyan Fashion",
     },
     {
       text: "Good life Almonds ",
-      image: "../../assets/e.jpeg",
+      image: "https://github.com/jogidharmesh/new180720/tree/master/src/assets/e.jpeg?raw=true",
       name: "Kalyan Fashion"
     }
   ]

@@ -12,6 +12,10 @@ export class SlideAppInfoComponent implements OnInit {
   ngOnInit() {
   }
 
+  slider1=true;
+  slider2=false;
+  slider3=false;
+
   carouselOptions = {
     margin: 0,
     nav: false,

@@ -1,10 +1,19 @@
 
 /* //new css */
 
+
+ nav{
+        width: 100%;
+        margin: auto;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-top: 5px;
+          background: var(--CATNAV-BG-COLOR);
+    }
 ul{
     padding: 0;
     list-style: none;
-    background: var(--CATNAV-BG-COLOR);
+  
 }
 ul li{
     display: inline-block;
@@ -35,15 +44,17 @@ ul li:hover ul.dropdown{
 }
 ul li ul.dropdown li{
     display: block;
+    background-color: var(--CATNAV-BG-COLOR);
 }
 
 
 @media screen and (max-width:450px){
 
     nav{
-        width: 400px;
+        width: 100%;
         margin: auto;
         overflow-x: auto;
         white-space: nowrap;
+        margin-top: 5px;
     }
 }

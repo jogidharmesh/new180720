@@ -1,26 +1,46 @@
 <div class="body-app">
 </div>
 
+
 <!-- <div class="slider">
 
+<div *ngIf="slider1" class="slider-box w3-animate-left">
+  <img src="https://github.com/jogidharmesh/new180720/blob/master/src/assets/mpaisa.png?raw=true">
+  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</h4>
+    <div class="slider-action">
+  <button class="button" (click)="slider3=false;slider2=true;slider1=false">Next</button>
+  <button class="button">Skip</button>
+    </div>
+</div>
+
+<div *ngIf="slider2"class="slider-box w3-animate-left">
+  <img src="https://github.com/jogidharmesh/new180720/blob/master/src/assets/mpaisa.png?raw=true">
+  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
+    <div class="slider-action">
+  <button  class="button" (click)="slider3=true;slider2=false;slider1=false">Next</button>
+  <button class="button" >Skip</button>
+    </div>
+</div>
+
+<div  *ngIf="slider3" class="slider-box w3-animate-left">
+  <img src="https://github.com/jogidharmesh/new180720/blob/master/src/assets/mpaisa.png?raw=true">
+  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+  <div class="slider-action">
+
+  <button class="button" (click)="slider3=false;slider2=false;slider1=false" >Next</button>
+  <button class="button">Skip</button>
+  </div>
+</div>
 </div> -->
 
 <div class="slider">
-  
-   <a href="#slide-1">1</a>
-   <a href="#slide-2">2</a>
-   <a href="#slide-3">3</a>
-
- 
-   <div class="slides">
-     <div id="slide-1">
-       1
-     </div>
-     <div id="slide-2">
-       2
-     </div>
-     <div id="slide-3">
-       3
-     </div>
-   </div>
- </div>
+  <div class="slide">
+    <img src="https://github.com/jogidharmesh/new180720/blob/master/src/assets/mpaisa.png?raw=true" />
+  </div>
+  <div class="slide">
+    <img src="https://github.com/jogidharmesh/new180720/blob/master/src/assets/mpaisa.png?raw=true" />
+  </div>
+  <div class="slide">
+    <img src="https://github.com/jogidharmesh/new180720/blob/master/src/assets/mpaisa.png?raw=true" />
+  </div>
+</div>
