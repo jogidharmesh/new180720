@@ -53,7 +53,10 @@
 }
 
 .product-qty input {
-    width: 55%;
+    width: 65%;
+    border-radius: 5px;
+    line-height: 2em;
+    border: 1px solid #d3d3d3;
 }
 .product-qty button {
     position: relative;
@@ -189,7 +192,7 @@ label {
   }
   .alert-box{
     position: absolute;
-    top: 9em;
+    top: 10em;
     left: 13em;
     color: #ffffff;
     padding: 5px;
@@ -207,6 +210,7 @@ label {
   .product-review-user{
       display: flex;
       flex-direction: row;
+      margin-top: 15px;
   }
 
   .product-review-user-comment{

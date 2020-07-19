@@ -2,11 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: auto;
-    /* justify-self: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;  */
+  box-sizing: border-box;
 }
 
 .order-box {
@@ -22,18 +18,19 @@
     /* font-size: 14px; */
     width: 80%;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .order-img {
-    width: 100px;
-    height: 100px;
+    width: 10%;
 }
 .order-details {
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
+    width: 30%;
     line-height: 1.5em;
     font-size: 16px;
+    box-sizing: border-box;
 }
 .order-row {
     display: flex;
@@ -41,8 +38,9 @@
     justify-content: space-between;
 }
 .order-image{
-    width: 100%;
-    height: 100%
+    width: 100px;
+    height: 100px;
+    margin:auto;
 }
 .order-btn button{
     padding: 0.8em 2em;
@@ -56,6 +54,7 @@
 .order-btn{
     display: flex;
     flex-direction: column;
+    width: 20%;
 }
 
 
@@ -66,6 +65,7 @@
     width: 80%;
     padding: 5px 10px 5px 10px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .cancel{
@@ -87,6 +87,7 @@
         border-radius: 10px;
         width: 95%;
         height: 150px;
+        box-sizing: border-box;
     }
 
     .cancel-order-main {
@@ -102,6 +103,7 @@
     .order-details{
         margin: auto;
         line-height: 1.5em;
+
     }
 
     .order-box{
@@ -132,4 +134,13 @@
     box-sizing: border-box;
     }
     
+    .order-img{
+      width: 25%;
+    }
+    .order-details{
+      width: 55%
+    }
+    .order-btn{
+      width: 15%
+    }
 }

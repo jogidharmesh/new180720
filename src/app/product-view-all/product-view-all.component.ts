@@ -57,7 +57,7 @@ export class ProductViewAllComponent implements OnInit {
   images = [
     {
       text: "Good life Almonds ",
-      image: "../../assets/a.jpeg",
+      image: "../assets/a.jpeg",
       name: "Kalyan Fashion"
     },
     {

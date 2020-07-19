@@ -50,6 +50,13 @@
     right: 10px;
 }
 
+.button-redeem input{
+    border-radius: 5px;
+    border: 1px solid var(--BORDER-COLOR);
+    width: 60%;
+    line-height: 2em;
+}
+
 
 @media screen and (max-width:450px){
 
