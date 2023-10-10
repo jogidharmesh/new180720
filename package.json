@@ -7,7 +7,7 @@
     "@angular/cdk": "10.0.1",
     "@angular/common": "10.0.1",
     "@angular/compiler": "10.0.1",
-    "@angular/core": "10.0.1",
+    "@angular/core": "10.2.5",
     "@angular/forms": "10.0.1",
     "@angular/google-maps": "9.2.4",
     "@angular/localize": "9.1.12",
